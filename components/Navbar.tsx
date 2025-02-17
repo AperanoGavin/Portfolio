@@ -53,16 +53,10 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/contact",
     },
   ];
   return (
-   /*  <div className="relative w-full flex items-center justify-center">
-      <FloatingDock className="top-2" />
-      <p className="text-black dark:text-white">
-        The Navbar will show on top of the page
-      </p>
-    </div> */
     <div className="flex items-center justify-center h-[12rem] w-full">
       <FloatingDock
         items={links}
