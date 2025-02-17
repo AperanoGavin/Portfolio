@@ -1,10 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { useId } from "react";
 
 export function FeaturesSectionDemo() {
   return (
-    <div className="py-20 lg:py-40">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
+    <div >
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto min-h-[700px]">
         {grid.map((feature) => (
           <div
             key={feature.title}
@@ -26,44 +27,230 @@ export function FeaturesSectionDemo() {
 
 const grid = [
   {
-    title: "HIPAA and SOC2 Compliant",
-    description:
-      "Our applications are HIPAA and SOC2 compliant, your data is safe with us, always.",
+    title: "Social NetWork",
+    description: (
+        <div className="flex flex-col gap-10">
+
+          <div className="flex gap-4">
+              <img 
+                src="/azure_aks.jpg" 
+                alt="Azure AKS"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+              <img 
+                src="/django-python-logo.png" 
+                alt="Django"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+              <img 
+                src="/depl.png" 
+                alt="continuous deployment"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+              <img 
+                src="/docker.jpg" 
+                alt="docker"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+               <img 
+                src="/compose.png" 
+                alt="docker-compose"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+          </div>
+          <p className="h-40">
+            It&apos;s a social Network where you can share your Code and get feedback 
+            from other developers, you can  follow other developers and see 
+            their code. You can also Code in real time with other developers
+          </p>
+        </div>
+      ),
   },
   {
-    title: "Automated Social Media Posting",
-    description:
-      "Schedule and automate your social media posts across multiple platforms to save time and maintain a consistent online presence.",
+    title: "Reinforcement Learning",
+    description: (
+        <div className="flex flex-col gap-10">
+
+          <div className="flex gap-4">
+              <img 
+                src="/pytorch.png" 
+                alt="pytorch"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+              <img 
+                src="/pyth.png" 
+                alt="python"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+              <img 
+                src="/Checkerboard_pattern.svg.png" 
+                alt="checkerboard"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+          </div>
+          <p>
+            It&apos;s a checkers game where  i used Reinforcement Learning , the agent can play against itself and learn from it&apos;s mistakes
+          </p>
+        </div>
+      ),
   },
   {
-    title: "Advanced Analytics",
-    description:
-      "Gain insights into your social media performance with detailed analytics and reporting tools to measure engagement and ROI.",
+    title: "Flutter Application (multi-platform)",
+    description: (
+        <div className="flex flex-col gap-10">
+
+          <div className="flex gap-4">
+              <img 
+                src="/flutter.png" 
+                alt="flutter"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+              <img 
+                src="/dart.png" 
+                alt="dart"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+              <img 
+                src="/bloc.png" 
+                alt="Bloc"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+          </div>
+          <p>
+            It&apos;s a Twitter Clone where you can post tweets, follow other users, like tweets, retweet tweets, comment on tweets, and see your followers and following using Bloc Pattern
+          </p>
+        </div>
+      ),
   },
   {
-    title: "Content Calendar",
-    description:
-      "Plan and organize your social media content with an intuitive calendar view, ensuring you never miss a post.",
+    title: "Kotlin Application ",
+    description: (
+        <div className="flex flex-col gap-10">
+
+          <div className="flex gap-4">
+              <img 
+                src="/mvvm.png" 
+                alt="mvvm"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+              <img 
+                src="/kotlin.jpeg" 
+                alt="kotlin"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+              <img 
+                src="/android.jpeg" 
+                alt="android"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+               <img 
+                src="/firebase.png" 
+                alt="firebase"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+          </div>
+          <p>
+            It&apos;s a classic Social App  where the users can connect with each other, post photos, like photos, and see their followers and following using MVVM Pattern
+          </p>
+        </div>
+      ),
   },
   {
-    title: "Audience Targeting",
-    description:
-      "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
+    title: "Recreate a Framework using PHP (POO) ",
+    description: (
+        <div className="flex flex-col gap-10">
+
+          <div className="flex gap-4">
+              <img 
+                src="/gandi.jpg" 
+                alt="gandi"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+              <img 
+                src="/docker.jpg" 
+                alt="docker"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+               <img 
+                src="/compose.png" 
+                alt="docker-compose"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+               <img 
+                src="/php.png" 
+                alt="docker"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+               <img 
+                src="/symfo.png" 
+                alt="docker-compose"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+          </div>
+          <p>
+            The Objective of this project is to create a framework using PHP (POO) that can be used to create a website, the framework is based on the MVC pattern and its like a Wordpress .
+          </p>
+        </div>
+      ),
   },
   {
-    title: "Social Listening",
-    description:
-      "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
+    title: "Leetcode Solutions ",
+    description: (
+        <div className="flex flex-col gap-10">
+
+          <div className="flex gap-4">
+              <img 
+                src="/pyth.png" 
+                alt="python"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+                <img 
+                src="/php.png" 
+                alt="docker"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+          </div>
+          <p>
+           As a software engineer, I&apos;m always looking to improve my problem-solving skills. I&apos;ve been solving problems on LeetCode for a while now, and I&apos;ve decided to share my solutions with you. I&apos;ll be posting my solutions to various problems on LeetCode, along with explanations of how I arrived at them. I hope you find them helpful!
+          </p>
+        </div>
+      ),
   },
   {
-    title: "Customizable Templates",
-    description:
-      "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
+    title: "Ship Factory  ",
+    description: (
+        <div className="flex flex-col gap-10">
+
+          <div className="flex gap-4">
+              <img 
+                src="/csharp.png" 
+                alt="C#"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+          </div>
+          <p>
+            It&apos;s a factory where you can manage ships the objectif of this project is to use a lot of design patterns like Factory, Singleton, Observer, Strategy, Decorator, Command, and more
+          </p>
+        </div>
+      ),
   },
   {
-    title: "Collaboration Tools",
-    description:
-      "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
+    title: "Vscode Extensions  ",
+    description: (
+        <div className="flex flex-col gap-10">
+
+          <div className="flex gap-4">
+              <img 
+                src="/ts.webp" 
+                alt="python"
+                className="w-10 h-10 object-cover rounded-lg"
+              />
+          </div>
+          <p>
+            I&apos;ve created a few VS Code extensions( only 2) to help improve my workflow. 
+          </p>
+        </div>
+      ),
   },
 ];
 

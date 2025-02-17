@@ -4,7 +4,7 @@ import React from 'react'
 const page = () => {
   return (
     <main >
-      <div className=" justify-center items-center h-screen p-4 sm:p-8 lg:p-[50px]">
+      <div className="p-4 sm:p-8 lg:p-[50px]">
         <div>
           <FeaturesSectionDemo />
         </div>
